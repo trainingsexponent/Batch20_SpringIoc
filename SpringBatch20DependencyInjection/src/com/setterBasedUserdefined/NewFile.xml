@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="e" class="com.setterBasedUserdefined.Employee">
+			     <property name="eid" value="32"></property>
+			     <property name="ename" value="Abcd"></property>
+			     <property name="address" value="Pune"></property>
+			     <property name="company" ref="c"></property>
+			  </bean>
+			  <bean id="c" class="com.setterBasedUserdefined.Company">
+			     <property name="cid" value="123"></property>
+			     <property name="cname" value="oracle"></property>
+			  </bean>
+			</beans>

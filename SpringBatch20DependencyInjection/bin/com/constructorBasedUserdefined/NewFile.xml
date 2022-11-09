@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			   <bean id="c" class="com.constructorBasedUserdefined.College">
+			      <constructor-arg value="123"></constructor-arg>
+			      <constructor-arg value="COEP"></constructor-arg>
+			   </bean>
+			   <bean id="s" class="com.constructorBasedUserdefined.Student">
+			      <constructor-arg value="12"></constructor-arg>
+			      <constructor-arg value="Qwerty"></constructor-arg>
+			      <constructor-arg ref="c"></constructor-arg>
+			   </bean>
+			</beans>
