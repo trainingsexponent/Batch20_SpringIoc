@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="s" class="com.constructorBased.Shopkeeper">
+			     <constructor-arg value="12345"></constructor-arg>
+			     <constructor-arg value="D-Mart"></constructor-arg>
+			     <constructor-arg>
+			       <list>
+			         <value>Shirt</value>
+			         <value>Jeans</value>
+			         <value>T-shirt</value>
+			       </list>
+			     </constructor-arg>
+			     <constructor-arg>
+			        <set>
+			           <value>Half Blood Prince</value>
+			           <value>Harry Potter</value>
+			        </set>
+			     </constructor-arg>
+			     <constructor-arg>
+			       <map>
+			          <entry key="1" value="Ind"></entry>
+			          <entry key="2" value="Eng"></entry>
+			       </map>
+			     </constructor-arg>
+			  </bean>
+			</beans>

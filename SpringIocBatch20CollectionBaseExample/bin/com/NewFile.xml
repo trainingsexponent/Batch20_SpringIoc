@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			   <bean id="o" class="com.OnlineShop">
+			      <property name="oid" value="432"></property>
+			      <property name="shopName" value="Amazon"></property>
+			      <property name="cloth">
+			         <list>
+			           <value>Shirts</value>
+			           <value>jeans</value>
+			           <value>T-Shirts</value>
+			         </list>
+			      </property>
+			      <property name="electronic">
+			         <set>
+			           <value>Apple</value>
+			           <value>Samsung</value>
+			           <value>Blackberry</value>
+			         </set>
+			      </property>
+			      <property name="map">
+			        <map>
+			          <entry key="1" value="Abcd"></entry>
+			          <entry key="2" value="Pqrs"></entry>
+			        </map>
+			      </property>
+			   </bean>
+			</beans>
