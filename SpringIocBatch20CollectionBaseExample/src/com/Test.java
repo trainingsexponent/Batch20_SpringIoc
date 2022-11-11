@@ -15,8 +15,8 @@ public class Test {
 		
 		System.out.println(onlineShop.getOid());
 		System.out.println(onlineShop.getShopName());
-		List<String> l = onlineShop.getCloth();
-		for(String s : l) {
+		List<Student> l = onlineShop.getStudents();
+		for(Student s : l) {
 			System.out.println(s);
 		}
 		

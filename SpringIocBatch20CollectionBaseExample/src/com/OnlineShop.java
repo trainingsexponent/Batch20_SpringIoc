@@ -10,7 +10,7 @@ public class OnlineShop {
 	
 	private String shopName;
 	
-	private List<String> cloth;
+	private List<Student> students;
 	
 	private Set<String> electronic;
 	
@@ -32,12 +32,12 @@ public class OnlineShop {
 		this.shopName = shopName;
 	}
 
-	public List<String> getCloth() {
-		return cloth;
+	public List<Student> getStudents() {
+		return students;
 	}
 
-	public void setCloth(List<String> cloth) {
-		this.cloth = cloth;
+	public void setStudents(List<Student> students) {
+		this.students = students;
 	}
 
 	public Set<String> getElectronic() {
@@ -58,7 +58,7 @@ public class OnlineShop {
 
 	@Override
 	public String toString() {
-		return "OnlineShop [oid=" + oid + ", shopName=" + shopName + ", cloth=" + cloth + ", electronic=" + electronic
+		return "OnlineShop [oid=" + oid + ", shopName=" + shopName + ", students=" + students + ", electronic=" + electronic
 				+ ", map=" + map + "]";
 	}
 	

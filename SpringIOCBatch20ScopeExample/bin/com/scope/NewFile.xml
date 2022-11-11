@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+   <bean id="p" class="com.scope.Product" scope="prototype">
+      <property name="pid" value="12"></property>
+      <property name="name" value="Apple"></property>
+      <property name="category" value="elec."></property>
+   </bean>
+</beans>

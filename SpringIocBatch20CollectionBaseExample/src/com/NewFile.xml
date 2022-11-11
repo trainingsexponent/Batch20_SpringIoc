@@ -2,29 +2,40 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
-			<beans>
-			   <bean id="o" class="com.OnlineShop">
-			      <property name="oid" value="432"></property>
-			      <property name="shopName" value="Amazon"></property>
-			      <property name="cloth">
-			         <list>
-			           <value>Shirts</value>
-			           <value>jeans</value>
-			           <value>T-Shirts</value>
-			         </list>
-			      </property>
-			      <property name="electronic">
-			         <set>
-			           <value>Apple</value>
-			           <value>Samsung</value>
-			           <value>Blackberry</value>
-			         </set>
-			      </property>
-			      <property name="map">
-			        <map>
-			          <entry key="1" value="Abcd"></entry>
-			          <entry key="2" value="Pqrs"></entry>
-			        </map>
-			      </property>
-			   </bean>
-			</beans>
+<beans>
+	<bean id="o" class="com.OnlineShop">
+		<property name="oid" value="432"></property>
+		<property name="shopName" value="Amazon"></property>
+		<property name="students">
+			<list>
+				<bean id="s" class="com.Student">
+					<property name="sid" value="123"></property>
+					<property name="sname" value="Qwerty"></property>
+				</bean>
+				<bean id="s1" class="com.Student">
+					<property name="sid" value="12"></property>
+					<property name="sname" value="Qwerty123"></property>
+				</bean>
+				<ref bean="s2"/>
+			</list>
+		</property>
+		<property name="electronic">
+			<set>
+				<value>Apple</value>
+				<value>Samsung</value>
+				<value>Blackberry</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="Abcd"></entry>
+				<entry key="2" value="Pqrs"></entry>
+				<!-- <entry key="3" value-ref="s2"></entry> -->
+			</map>
+		</property>
+	</bean>
+	<bean id="s2" class="com.Student">
+		<property name="sid" value="2"></property>
+		<property name="sname" value="Qwerty@123"></property>
+	</bean>
+</beans>
