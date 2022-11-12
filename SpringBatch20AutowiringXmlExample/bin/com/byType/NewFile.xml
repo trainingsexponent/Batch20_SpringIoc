@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+			<beans>
+			   <bean id="s" class="com.byType.Student" autowire="byType">
+			     <property name="sid" value="123"></property>
+			     <property name="sname" value="Qwerty"></property>
+			     <!-- <property name="college" ref="c"></property> -->
+			   </bean>
+			   <bean id="c" class="com.byType.College">
+			     <property name="cid" value="1"></property>
+			     <property name="cname" value="PCCOE"></property>
+			   </bean>
+			   <bean id="c1" class="com.byType.College">
+			     <property name="cid" value="2"></property>
+			     <property name="cname" value="DY"></property>
+			   </bean>
+			</beans>
+
+	
